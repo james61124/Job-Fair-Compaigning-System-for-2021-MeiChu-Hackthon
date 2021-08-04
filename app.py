@@ -49,8 +49,8 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if(event.message.text=="123"):
-        msg = "這是第一關\n"+event.message.text
+    if(event.message.text=="開始遊戲"):
+        msg = "這是一個奇怪的故事.."
     #if '最新合作廠商' in msg:
        # message = imagemap_message()
         #line_bot_api.reply_message(event.reply_token, message)
@@ -73,7 +73,7 @@ def handle_message(event):
         message = TextSendMessage(text=msg)
         #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
         line_bot_api.reply_message(event.reply_token, message)
-        line_bot_api.reply_message(event.reply_token, message)
+        
     
 
 import os
