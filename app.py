@@ -50,7 +50,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if(event.message.text=="123"):
-        msg = "這是第一關"+event.message.text
+        msg = "這是第一關\n"+event.message.text
     #if '最新合作廠商' in msg:
        # message = imagemap_message()
         #line_bot_api.reply_message(event.reply_token, message)
