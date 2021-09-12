@@ -50,7 +50,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if(event.message.text=="開始遊戲"):
-        msg = "這是一個奇怪的故事.."
+        msg = ImageSendMessage(
+            original_content_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing",
+            preview_image_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing"
+        )
     #if '最新合作廠商' in msg:
        # message = imagemap_message()
         #line_bot_api.reply_message(event.reply_token, message)
@@ -71,13 +74,18 @@ def handle_message(event):
         #line_bot_api.reply_message(event.reply_token, message)
     #else:
         message = []
-        message.append(TextSendMessage(text=msg))
-        message.append(TextSendMessage(text=msg))
-        message.append(TextSendMessage(text=msg))
+        message.append(text=msg)
+        #message.append(TextSendMessage(text=msg))
+        #message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, message)
         #message = TextSendMessage(text=msg)
         #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
         #line_bot_api.reply_message(event.reply_token, message)
+    else:
+        msg="再想想喔"
+        message=[]
+        message.append(TextSendMessage(text=msg))
+        line_bot_api.reply_message(event.reply_token, message)
         
     
 
