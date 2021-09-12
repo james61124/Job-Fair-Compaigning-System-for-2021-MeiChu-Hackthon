@@ -76,8 +76,8 @@ def handle_message(event):
         #msg="123"
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing",
-            preview_image_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing"
+            original_content_url="https://1.bp.blogspot.com/-LThNx8mFjyU/YT2clAmbP-I/AAAAAAAAK5s/Ji9gCp7uTrIK_DorZIMob3YJ2CsbusNKACLcBGAsYHQ/s320/232409124_226292375939185_1299968311582750060_n.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-LThNx8mFjyU/YT2clAmbP-I/AAAAAAAAK5s/Ji9gCp7uTrIK_DorZIMob3YJ2CsbusNKACLcBGAsYHQ/s320/232409124_226292375939185_1299968311582750060_n.jpg"
         ))
         message.append(TextSendMessage(text="這是一個奇怪的故事"))
         #message.append(TextSendMessage(text=msg))
