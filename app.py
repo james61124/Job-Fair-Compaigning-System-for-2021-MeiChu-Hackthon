@@ -74,11 +74,11 @@ def handle_message(event):
         #line_bot_api.reply_message(event.reply_token, message)
     #else:
         #msg="123"
-        message = []
-        message.append(ImageSendMessage(text=msg))
+        #message = []
+        #message.append(ImageSendMessage(text=msg))
         #message.append(TextSendMessage(text=msg))
         #message.append(TextSendMessage(text=msg))
-        line_bot_api.reply_message(event.reply_token, message)
+        line_bot_api.reply_message(event.reply_token, msg)
         #message = TextSendMessage(text=msg)
         #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
         #line_bot_api.reply_message(event.reply_token, message)
