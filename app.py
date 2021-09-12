@@ -81,7 +81,7 @@ def handle_message(event):
         ))
         message.append(TextSendMessage(text="這是一個奇怪的故事"))
         #message.append(TextSendMessage(text=msg))
-        line_bot_api.reply_message(event.reply_token, msg)
+        line_bot_api.reply_message(event.reply_token, message)
         #message = TextSendMessage(text=msg)
         #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
         #line_bot_api.reply_message(event.reply_token, message)
