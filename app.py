@@ -50,10 +50,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if(event.message.text=="開始遊戲"):
-        #msg = ImageSendMessage(
-            #original_content_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing",
-            #preview_image_url="https://drive.google.com/file/d/1MXApEEt70Kz2vU6YH6bZboUdj-Z0oRYK/view?usp=sharing"
-        #)
+        msg = ImageSendMessage(
+            original_content_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg",
+            preview_image_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg"
+        )
     #if '最新合作廠商' in msg:
        # message = imagemap_message()
         #line_bot_api.reply_message(event.reply_token, message)
@@ -73,9 +73,9 @@ def handle_message(event):
        # message = function_list()
         #line_bot_api.reply_message(event.reply_token, message)
     #else:
-        msg="123"
+        #msg="123"
         message = []
-        message.append(TextSendMessage(text=msg))
+        message.append(ImageSendMessage(text=msg))
         #message.append(TextSendMessage(text=msg))
         #message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, message)
