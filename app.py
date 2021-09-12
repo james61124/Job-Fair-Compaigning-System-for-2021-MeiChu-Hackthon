@@ -74,8 +74,11 @@ def handle_message(event):
         #line_bot_api.reply_message(event.reply_token, message)
     #else:
         #msg="123"
-        #message = []
-        #message.append(ImageSendMessage(text=msg))
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg",
+            preview_image_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg"
+        ))
         #message.append(TextSendMessage(text=msg))
         #message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, msg)
