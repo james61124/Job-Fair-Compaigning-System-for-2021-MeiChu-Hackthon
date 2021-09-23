@@ -68,6 +68,10 @@ def handle_message(event):
         #message = TextSendMessage(text=msg)
         #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
         #line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記羅技原始碼":
+        message=[]
+        message.append(TextSendMessage(text="羅技宣傳耳塞的影片名稱是甚麼??"))
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想喔"
         message=[]
