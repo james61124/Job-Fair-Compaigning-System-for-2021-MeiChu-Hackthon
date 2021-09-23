@@ -50,11 +50,38 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if(event.message.text=="開始遊戲"):
-        msg = ImageSendMessage(
-            original_content_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg",
-            preview_image_url="https://d.ecimg.tw/items/DMAFCZA900BHW00/000001_1624598445.jpg"
-        )
-    #if '最新合作廠商' in msg:
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-01EYHTNY1L8/YUzFpmtzSyI/AAAAAAAAK6k/hSVh_PRA0I0YCSGRNbmLp6scgEqufHbnwCLcBGAsYHQ/s320/1%2B%25282%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-01EYHTNY1L8/YUzFpmtzSyI/AAAAAAAAK6k/hSVh_PRA0I0YCSGRNbmLp6scgEqufHbnwCLcBGAsYHQ/s320/1%2B%25282%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-3Ss1iPFYMLQ/YUzFzJDggAI/AAAAAAAAK6o/vgakn2ob-uw1D_KYqje-Yj6BjDW4es1DQCLcBGAsYHQ/s320/2%2B%25282%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-3Ss1iPFYMLQ/YUzFzJDggAI/AAAAAAAAK6o/vgakn2ob-uw1D_KYqje-Yj6BjDW4es1DQCLcBGAsYHQ/s320/2%2B%25282%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg"
+        ))
+        #message.append(TextSendMessage(text=msg))
+        line_bot_api.reply_message(event.reply_token, message)
+        #message = TextSendMessage(text=msg)
+        #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
+        #line_bot_api.reply_message(event.reply_token, message)
+    else:
+        msg="再想想喔"
+        message=[]
+        message.append(TextSendMessage(text=msg))
+        line_bot_api.reply_message(event.reply_token, message)
+        
+    
+
+import os
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
+#if '最新合作廠商' in msg:
        # message = imagemap_message()
         #line_bot_api.reply_message(event.reply_token, message)
     #elif '最新活動訊息' in msg:
@@ -74,26 +101,3 @@ def handle_message(event):
         #line_bot_api.reply_message(event.reply_token, message)
     #else:
         #msg="123"
-        message = []
-        message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-LThNx8mFjyU/YT2clAmbP-I/AAAAAAAAK5s/Ji9gCp7uTrIK_DorZIMob3YJ2CsbusNKACLcBGAsYHQ/s320/232409124_226292375939185_1299968311582750060_n.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-LThNx8mFjyU/YT2clAmbP-I/AAAAAAAAK5s/Ji9gCp7uTrIK_DorZIMob3YJ2CsbusNKACLcBGAsYHQ/s320/232409124_226292375939185_1299968311582750060_n.jpg"
-        ))
-        message.append(TextSendMessage(text="這是一個奇怪的故事"))
-        #message.append(TextSendMessage(text=msg))
-        line_bot_api.reply_message(event.reply_token, message)
-        #message = TextSendMessage(text=msg)
-        #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
-        #line_bot_api.reply_message(event.reply_token, message)
-    else:
-        msg="再想想喔"
-        message=[]
-        message.append(TextSendMessage(text=msg))
-        line_bot_api.reply_message(event.reply_token, message)
-        
-    
-
-import os
-if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
