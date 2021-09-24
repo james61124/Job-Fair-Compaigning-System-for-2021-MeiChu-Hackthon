@@ -72,8 +72,24 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="羅技宣傳耳塞的影片名稱是甚麼??"))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="Introducing Vista 2 True Wireless Earbuds":
+        message=[]
+        message.append(TextSendMessage(text="羅技原始碼93413"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="introducing vista 2 true wireless earbuds":
+        message=[]
+        message.append(TextSendMessage(text="羅技原始碼93413"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="INTRODUCING VISTA 2 TRUE WIRELESS EARBUDS":
+        message=[]
+        message.append(TextSendMessage(text="羅技原始碼93413"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的名字:" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
+        line_bot_api.reply_message(event.reply_token, message)
     else:
-        msg="再想想喔"
+        msg="再想想!!"
         message=[]
         message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, message)
