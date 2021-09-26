@@ -195,7 +195,7 @@ def handle_message(event):
             original_content_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg",
             preview_image_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg"
         ))
-        message.append(TextSendMessage(text="您已完成第一階段，請輸入\"你的名字_____\"並截圖最後通關的對話紀錄，便能擁有抽獎機會"))
+        message.append(TextSendMessage(text="您已完成第一階段，請輸入\"我的名字:_____\"並截圖最後通關的對話紀錄，便能擁有抽獎機會"))
         line_bot_api.reply_message(event.reply_token, message)
     #收關
     elif "我的名字:" in event.message.text:
