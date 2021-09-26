@@ -185,7 +185,7 @@ def handle_message(event):
         ))
         line_bot_api.reply_message(event.reply_token, message)
     #100趴收關
-    elif event.message.text=="CPU修復碼58126":
+    elif event.message.text=="梅竹黑客松":
         message = []
         message.append(ImageSendMessage(
             original_content_url="https://1.bp.blogspot.com/-O-ZyXcPHLaY/YU3UF-z8wwI/AAAAAAAAK7c/MaDKYnFcHo4TL_kOSsz-FtUzDvA6Y_HJQCLcBGAsYHQ/s320/9%2B%25281%2529.jpg",
