@@ -100,7 +100,7 @@ def handle_message(event):
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
     #實驗室(原相)
-    elif event.message.text=="忘記原相原始碼":
+    elif event.message.text=="忘記原相科技原始碼":
         message=[]
         message.append(TextSendMessage(text="請輸入原相致力於生產的高科技晶片英文名稱"))
         line_bot_api.reply_message(event.reply_token, message)
@@ -150,6 +150,7 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="NXP原始碼88332"))
         line_bot_api.reply_message(event.reply_token, message)
+    #40趴收關
     elif ("羅技原始碼93413" in event.message.text) & ("supermicro原始碼70624" in event.message.text) & ("原相原始碼04126" in event.message.text) & ("美光原始碼53234" in event.message.text) & ("NXP原始碼88332" in event.message.text):
         message = []
         message.append(ImageSendMessage(
@@ -164,7 +165,9 @@ def handle_message(event):
             original_content_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg",
             preview_image_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg"
         ))
+        message.append(TextSendMessage(text="QQ..CPU超載，請聯繫維修工人並跟他說\"CPU超載\""))
         line_bot_api.reply_message(event.reply_token, message)
+    
     #收關
     elif "我的名字:" in event.message.text:
         message=[]
