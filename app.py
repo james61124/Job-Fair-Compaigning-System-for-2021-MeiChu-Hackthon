@@ -49,6 +49,7 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    #開關
     if(event.message.text=="開始遊戲"):
         message = []
         message.append(ImageSendMessage(
@@ -63,11 +64,8 @@ def handle_message(event):
             original_content_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg",
             preview_image_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg"
         ))
-        #message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, message)
-        #message = TextSendMessage(text=msg)
-        #line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
-        #line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(羅技)
     elif event.message.text=="忘記羅技原始碼":
         message=[]
         message.append(TextSendMessage(text="羅技宣傳耳塞的影片名稱是甚麼??"))
@@ -84,6 +82,7 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="羅技原始碼93413"))
         line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(supermicro)
     elif event.message.text=="忘記supermicro原始碼":
         message=[]
         message.append(TextSendMessage(text="請輸入supermicro的CEO英文名字"))
@@ -100,6 +99,7 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(原項)
     elif event.message.text=="忘記原項原始碼":
         message=[]
         message.append(TextSendMessage(text="請輸入原項致力於生產的高科技晶片英文名稱"))
@@ -120,6 +120,36 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="原項原始碼04126"))
         line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(美光)
+    elif event.message.text=="忘記美光原始碼":
+        message=[]
+        message.append(TextSendMessage(text="請輸入美光在甚麼領域有領先地位"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="DRAM":
+        message=[]
+        message.append(TextSendMessage(text="美光原始碼53234"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="dram":
+        message=[]
+        message.append(TextSendMessage(text="美光原始碼53234"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記NXP原始碼":
+        message=[]
+        message.append(TextSendMessage(text="請輸入NXP主要的四大市場"))
+        line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(NXP)
+    elif ("automotive" in event.message.text) & ("communication infrastructure" in event.message.text) & ("industrial" in event.message.text) & ("mobile" in event.message.text) :
+        message=[]
+        message.append(TextSendMessage(text="NXP原始碼88332"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif ("Automotive" in event.message.text) & ("Communication Infrastructure" in event.message.text) & ("Industrial" in event.message.text) & ("Mobile" in event.message.text) :
+        message=[]
+        message.append(TextSendMessage(text="NXP原始碼88332"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif ("AUTOMOTIVE" in event.message.text) & ("COMMUNICATION INFRASTRUCTURE" in event.message.text) & ("INDUSTRIAL" in event.message.text) & ("MOBILE" in event.message.text) :
+        message=[]
+        message.append(TextSendMessage(text="NXP原始碼88332"))
+        line_bot_api.reply_message(event.reply_token, message)
     elif "我的名字:" in event.message.text:
         message=[]
         message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
@@ -133,8 +163,10 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text=msg))
         line_bot_api.reply_message(event.reply_token, message)
-        
-    
+#message.append(TextSendMessage(text=msg))     
+#message = TextSendMessage(text=msg)
+#line_bot_api.push_message(to, TextSendMessage(text='Hello World!'))
+#line_bot_api.reply_message(event.reply_token, message)   
 
 import os
 if __name__ == "__main__":
