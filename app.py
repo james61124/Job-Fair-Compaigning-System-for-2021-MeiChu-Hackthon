@@ -167,7 +167,36 @@ def handle_message(event):
         ))
         message.append(TextSendMessage(text="QQ..CPU超載，請聯繫維修工人並跟他說\"CPU超載\"，以便繼續運作"))
         line_bot_api.reply_message(event.reply_token, message)
-    
+    #70趴收關
+    elif event.message.text=="CPU修復碼58126":
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-yCqXt7vB1Q8/YU3TzyeHmRI/AAAAAAAAK7Q/FP1ekyjssSMTkUmhGBoCnu25D5GHabAiACLcBGAsYHQ/s320/7%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-yCqXt7vB1Q8/YU3TzyeHmRI/AAAAAAAAK7Q/FP1ekyjssSMTkUmhGBoCnu25D5GHabAiACLcBGAsYHQ/s320/7%2B%25281%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-yrF_CrbYV_U/YU3T7yc4CBI/AAAAAAAAK7U/RaDvg7Fp1DgQCi9xg0QrburBqcOWkyWAQCLcBGAsYHQ/s320/8%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-yrF_CrbYV_U/YU3T7yc4CBI/AAAAAAAAK7U/RaDvg7Fp1DgQCi9xg0QrburBqcOWkyWAQCLcBGAsYHQ/s320/8%2B%25281%2529.jpg"
+        ))
+        message.append(TextSendMessage(text="進行最後身分驗證，請輸入五位驗證碼"))
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7eV05bUhWuMAX8Uh5Rr&_nc_oc=AQnC6bfaYAU4eY4diTGxvStcO5PAzVoPMxbDF_h1f5U4DOvZy7JXYqZMlWy2GYOsiV8&_nc_ht=scontent-tpe1-1.xx&oh=0a3b0e5ca6d3bd404424d66fc7a79aab&oe=6173C441",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7eV05bUhWuMAX8Uh5Rr&_nc_oc=AQnC6bfaYAU4eY4diTGxvStcO5PAzVoPMxbDF_h1f5U4DOvZy7JXYqZMlWy2GYOsiV8&_nc_ht=scontent-tpe1-1.xx&oh=0a3b0e5ca6d3bd404424d66fc7a79aab&oe=6173C441"
+        ))
+        line_bot_api.reply_message(event.reply_token, message)
+    #100趴收關
+    elif event.message.text=="CPU修復碼58126":
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-O-ZyXcPHLaY/YU3UF-z8wwI/AAAAAAAAK7c/MaDKYnFcHo4TL_kOSsz-FtUzDvA6Y_HJQCLcBGAsYHQ/s320/9%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-O-ZyXcPHLaY/YU3UF-z8wwI/AAAAAAAAK7c/MaDKYnFcHo4TL_kOSsz-FtUzDvA6Y_HJQCLcBGAsYHQ/s320/9%2B%25281%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg"
+        ))
+        message.append(TextSendMessage(text="您已完成第一階段，請輸入\"你的名字_____\"並截圖最後通關的對話紀錄，便能擁有抽獎機會"))
+        line_bot_api.reply_message(event.reply_token, message)
     #收關
     elif "我的名字:" in event.message.text:
         message=[]
