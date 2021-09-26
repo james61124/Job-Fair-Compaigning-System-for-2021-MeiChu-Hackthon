@@ -84,6 +84,42 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="羅技原始碼93413"))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記supermicro原始碼":
+        message=[]
+        message.append(TextSendMessage(text="請輸入supermicro的CEO英文名字"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="charles liang":
+        message=[]
+        message.append(TextSendMessage(text="supermicro原始碼70624"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="Charles Ciang":
+        message=[]
+        message.append(TextSendMessage(text="supermicro原始碼70624"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="CHARLES CIANG":
+        message=[]
+        message.append(TextSendMessage(text="supermicro原始碼70624"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記原項原始碼":
+        message=[]
+        message.append(TextSendMessage(text="請輸入原項致力於生產的高科技晶片英文名稱"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="CMOS Imaging Sensor":
+        message=[]
+        message.append(TextSendMessage(text="原項原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="CMOS imaging sensor":
+        message=[]
+        message.append(TextSendMessage(text="原項原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="cmos imaging sensor":
+        message=[]
+        message.append(TextSendMessage(text="原項原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="CMOS IMAGING SENSOR":
+        message=[]
+        message.append(TextSendMessage(text="原項原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
     elif "我的名字:" in event.message.text:
         message=[]
         message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
