@@ -197,6 +197,19 @@ def handle_message(event):
         ))
         message.append(TextSendMessage(text="您已完成第一階段，請輸入\"我的名字:_____\"並截圖最後通關的對話紀錄，便能擁有抽獎機會"))
         line_bot_api.reply_message(event.reply_token, message)
+    #一階default
+    elif event.message.text=="忘記line原始碼":
+        message=[]
+        message.append(TextSendMessage(text="Line原始碼78326"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記Line原始碼":
+        message=[]
+        message.append(TextSendMessage(text="Line原始碼78326"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記nuarl原始碼":
+        message=[]
+        message.append(TextSendMessage(text="nuarl原始碼90357"))
+        line_bot_api.reply_message(event.reply_token, message)
     #收關
     elif "我的名字:" in event.message.text:
         message=[]
