@@ -99,26 +99,26 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
-    #實驗室(原項)
-    elif event.message.text=="忘記原項原始碼":
+    #實驗室(原相)
+    elif event.message.text=="忘記原相原始碼":
         message=[]
-        message.append(TextSendMessage(text="請輸入原項致力於生產的高科技晶片英文名稱"))
+        message.append(TextSendMessage(text="請輸入原相致力於生產的高科技晶片英文名稱"))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="CMOS Imaging Sensor":
         message=[]
-        message.append(TextSendMessage(text="原項原始碼04126"))
+        message.append(TextSendMessage(text="原相原始碼04126"))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="CMOS imaging sensor":
         message=[]
-        message.append(TextSendMessage(text="原項原始碼04126"))
+        message.append(TextSendMessage(text="原相原始碼04126"))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="cmos imaging sensor":
         message=[]
-        message.append(TextSendMessage(text="原項原始碼04126"))
+        message.append(TextSendMessage(text="原相原始碼04126"))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="CMOS IMAGING SENSOR":
         message=[]
-        message.append(TextSendMessage(text="原項原始碼04126"))
+        message.append(TextSendMessage(text="原相原始碼04126"))
         line_bot_api.reply_message(event.reply_token, message)
     #實驗室(美光)
     elif event.message.text=="忘記美光原始碼":
@@ -150,6 +150,22 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="NXP原始碼88332"))
         line_bot_api.reply_message(event.reply_token, message)
+    elif ("羅技原始碼93413" in event.message.text) & ("supermicro原始碼70624" in event.message.text) & ("原相原始碼04126" in event.message.text) & ("美光原始碼53234" in event.message.text) & ("NXP原始碼88332" in event.message.text):
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-1LLFrpwPzbY/YU3TYbtHAoI/AAAAAAAAK7A/WU86jyFCECsPPZpTqIbiwrkMiDKP8P-AwCLcBGAsYHQ/s320/4%2B%25282%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-1LLFrpwPzbY/YU3TYbtHAoI/AAAAAAAAK7A/WU86jyFCECsPPZpTqIbiwrkMiDKP8P-AwCLcBGAsYHQ/s320/4%2B%25282%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-hInuenMa3oM/YU3TgvZNbbI/AAAAAAAAK7E/okawr7CIyFMb76vNW9gu_1TjkfOMu3cEgCLcBGAsYHQ/s320/5%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-hInuenMa3oM/YU3TgvZNbbI/AAAAAAAAK7E/okawr7CIyFMb76vNW9gu_1TjkfOMu3cEgCLcBGAsYHQ/s320/5%2B%25281%2529.jpg"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg",
+            preview_image_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg"
+        ))
+        line_bot_api.reply_message(event.reply_token, message)
+    #收關
     elif "我的名字:" in event.message.text:
         message=[]
         message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
