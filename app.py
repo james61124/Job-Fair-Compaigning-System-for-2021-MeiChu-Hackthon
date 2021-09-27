@@ -91,11 +91,11 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
-    elif event.message.text=="Charles Ciang":
+    elif event.message.text=="Charles Liang":
         message=[]
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
-    elif event.message.text=="CHARLES CIANG":
+    elif event.message.text=="CHARLES LIANG":
         message=[]
         message.append(TextSendMessage(text="supermicro原始碼70624"))
         line_bot_api.reply_message(event.reply_token, message)
