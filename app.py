@@ -165,7 +165,7 @@ def handle_message(event):
             original_content_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg",
             preview_image_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg"
         ))
-        message.append(TextSendMessage(text="QQ..CPU超載，請聯繫維修工人並跟他說\"CPU超載\"，以便繼續運作"))
+        message.append(TextSendMessage(text="QQ..CPU超載，請\"聯繫\"維修工人並跟他說\"CPU超載\"，以便繼續運作"))
         line_bot_api.reply_message(event.reply_token, message)
     #70趴收關
     elif event.message.text=="CPU修復碼58126":
