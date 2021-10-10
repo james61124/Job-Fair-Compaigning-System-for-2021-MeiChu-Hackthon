@@ -171,17 +171,17 @@ def handle_message(event):
     elif event.message.text=="CPU修復碼58126":
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD",
-            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244679561_1523733927981223_8056673617022392423_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=YKjTfSs6p7YAX9EMIy3&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=58ac8f80fe363aa94e52a6a2cfbb85d0&oe=61883DE0",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244679561_1523733927981223_8056673617022392423_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=YKjTfSs6p7YAX9EMIy3&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=58ac8f80fe363aa94e52a6a2cfbb85d0&oe=61883DE0"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C",
-            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244465604_1523734361314513_2597882015681817780_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=_TYsOaJHm6EAX-4Uh1M&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=a38bbb7522915f72245f4e339059fcdc&oe=6189B57C",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244465604_1523734361314513_2597882015681817780_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=_TYsOaJHm6EAX-4Uh1M&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=a38bbb7522915f72245f4e339059fcdc&oe=6189B57C"
         ))
         message.append(TextSendMessage(text="進行最後身分驗證，請輸入五位驗證碼"))
         message.append(ImageSendMessage(
-            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7",
-            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=9nEdOGrzYVgAX8U9Yt0&_nc_ht=scontent-tpe1-1.xx&oh=3f53c375abd413801f83e26c209c25a3&oe=61878AC1",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=9nEdOGrzYVgAX8U9Yt0&_nc_ht=scontent-tpe1-1.xx&oh=3f53c375abd413801f83e26c209c25a3&oe=61878AC1"
         ))
         line_bot_api.reply_message(event.reply_token, message)
     #100趴收關
