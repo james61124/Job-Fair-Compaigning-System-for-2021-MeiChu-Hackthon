@@ -53,16 +53,16 @@ def handle_message(event):
     if(event.message.text=="開始遊戲"):
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-01EYHTNY1L8/YUzFpmtzSyI/AAAAAAAAK6k/hSVh_PRA0I0YCSGRNbmLp6scgEqufHbnwCLcBGAsYHQ/s320/1%2B%25282%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-01EYHTNY1L8/YUzFpmtzSyI/AAAAAAAAK6k/hSVh_PRA0I0YCSGRNbmLp6scgEqufHbnwCLcBGAsYHQ/s320/1%2B%25282%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244746076_1523729284648354_2814710021989982106_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=LvQr8pRQjaMAX_QZVP4&_nc_ht=scontent-tpe1-1.xx&oh=00674243940fbdba7dcef7959d516cd4&oe=6188DF9D",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244746076_1523729284648354_2814710021989982106_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=LvQr8pRQjaMAX_QZVP4&_nc_ht=scontent-tpe1-1.xx&oh=00674243940fbdba7dcef7959d516cd4&oe=6188DF9D"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-3Ss1iPFYMLQ/YUzFzJDggAI/AAAAAAAAK6o/vgakn2ob-uw1D_KYqje-Yj6BjDW4es1DQCLcBGAsYHQ/s320/2%2B%25282%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-3Ss1iPFYMLQ/YUzFzJDggAI/AAAAAAAAK6o/vgakn2ob-uw1D_KYqje-Yj6BjDW4es1DQCLcBGAsYHQ/s320/2%2B%25282%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244483680_1523729587981657_6057869114533392314_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=hdETSZ0DO1AAX-O1LII&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=e9ed580f10f5a6c737620fe8cd4b96a2&oe=6186DE8A",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244483680_1523729587981657_6057869114533392314_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=hdETSZ0DO1AAX-O1LII&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=e9ed580f10f5a6c737620fe8cd4b96a2&oe=6186DE8A"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-fjO3u12rZ68/YUzF51j3cpI/AAAAAAAAK6w/Lq3CP63dBSQIzIcsrQobaMOEL1rG1oUvgCLcBGAsYHQ/s320/3%2B%25282%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244746075_1523729727981643_7513390045428172144_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=9GlKHATj53UAX_1jFUt&_nc_ht=scontent-tpe1-1.xx&oh=449ef3d7c1569aa5e1f7a1305b5013a7&oe=6188B13F",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244746075_1523729727981643_7513390045428172144_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=9GlKHATj53UAX_1jFUt&_nc_ht=scontent-tpe1-1.xx&oh=449ef3d7c1569aa5e1f7a1305b5013a7&oe=6188B13F"
         ))
         line_bot_api.reply_message(event.reply_token, message)
     #實驗室(羅技)
@@ -154,16 +154,16 @@ def handle_message(event):
     elif ("羅技原始碼93413" in event.message.text) & ("supermicro原始碼70624" in event.message.text) & ("原相原始碼04126" in event.message.text) & ("美光原始碼53234" in event.message.text) & ("NXP原始碼88332" in event.message.text):
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-1LLFrpwPzbY/YU3TYbtHAoI/AAAAAAAAK7A/WU86jyFCECsPPZpTqIbiwrkMiDKP8P-AwCLcBGAsYHQ/s320/4%2B%25282%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-1LLFrpwPzbY/YU3TYbtHAoI/AAAAAAAAK7A/WU86jyFCECsPPZpTqIbiwrkMiDKP8P-AwCLcBGAsYHQ/s320/4%2B%25282%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-hInuenMa3oM/YU3TgvZNbbI/AAAAAAAAK7E/okawr7CIyFMb76vNW9gu_1TjkfOMu3cEgCLcBGAsYHQ/s320/5%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-hInuenMa3oM/YU3TgvZNbbI/AAAAAAAAK7E/okawr7CIyFMb76vNW9gu_1TjkfOMu3cEgCLcBGAsYHQ/s320/5%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-ttAoh7DB_T0/YU3To0FXMrI/AAAAAAAAK7M/pgkhiPEJg6MINzSZw0qHwti_MRUjO5KHQCLcBGAsYHQ/s320/6%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7"
         ))
         message.append(TextSendMessage(text="QQ..CPU超載，請\"聯繫\"維修工人並跟他說\"CPU超載\"，以便繼續運作"))
         line_bot_api.reply_message(event.reply_token, message)
@@ -171,17 +171,17 @@ def handle_message(event):
     elif event.message.text=="CPU修復碼58126":
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-yCqXt7vB1Q8/YU3TzyeHmRI/AAAAAAAAK7Q/FP1ekyjssSMTkUmhGBoCnu25D5GHabAiACLcBGAsYHQ/s320/7%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-yCqXt7vB1Q8/YU3TzyeHmRI/AAAAAAAAK7Q/FP1ekyjssSMTkUmhGBoCnu25D5GHabAiACLcBGAsYHQ/s320/7%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244534559_1523731361314813_3028525321590764396_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=go144GVvO8gAX_VmpKv&_nc_ht=scontent-tpe1-1.xx&oh=3b707ae8586feaba5a82e0ec73c8fb5b&oe=6188C2FD"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-yrF_CrbYV_U/YU3T7yc4CBI/AAAAAAAAK7U/RaDvg7Fp1DgQCi9xg0QrburBqcOWkyWAQCLcBGAsYHQ/s320/8%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-yrF_CrbYV_U/YU3T7yc4CBI/AAAAAAAAK7U/RaDvg7Fp1DgQCi9xg0QrburBqcOWkyWAQCLcBGAsYHQ/s320/8%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244440627_1523731534648129_4640469324812149714_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=9wQvbAWa2jYAX_89crk&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=9a59103f2316bc83e1dca048971def2a&oe=6186F79C"
         ))
         message.append(TextSendMessage(text="進行最後身分驗證，請輸入五位驗證碼"))
         message.append(ImageSendMessage(
-            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7eV05bUhWuMAX8Uh5Rr&_nc_oc=AQnC6bfaYAU4eY4diTGxvStcO5PAzVoPMxbDF_h1f5U4DOvZy7JXYqZMlWy2GYOsiV8&_nc_ht=scontent-tpe1-1.xx&oh=0a3b0e5ca6d3bd404424d66fc7a79aab&oe=6173C441",
-            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=7eV05bUhWuMAX8Uh5Rr&_nc_oc=AQnC6bfaYAU4eY4diTGxvStcO5PAzVoPMxbDF_h1f5U4DOvZy7JXYqZMlWy2GYOsiV8&_nc_ht=scontent-tpe1-1.xx&oh=0a3b0e5ca6d3bd404424d66fc7a79aab&oe=6173C441"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244538726_1523731657981450_3917339840482423888_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=k4YZYGgtktUAX9ncVM_&_nc_ht=scontent-tpe1-1.xx&oh=4e1b519c345deeeb09b23850e39d3a8a&oe=6188E4E7"
         ))
         line_bot_api.reply_message(event.reply_token, message)
     #100趴收關
@@ -220,13 +220,6 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="恭喜!記得截圖至抽獎台抽獎喔"))
         message.append(TextSendMessage(text="若想繼續下一階的遊戲，請打\"開始第二階遊戲\""))
-        line_bot_api.reply_message(event.reply_token, message)
-    elif "測試" in event.message.text:
-        message = []
-        message.append(ImageSendMessage(
-            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244712650_1523725214648761_6274161387782555243_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=lKdbuwTldzoAX-vCPt7&_nc_ht=scontent-tpe1-1.xx&oh=26eff9a65270f2bd929df2c281c4abbb&oe=6189D205",
-            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244712650_1523725214648761_6274161387782555243_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=lKdbuwTldzoAX-vCPt7&_nc_ht=scontent-tpe1-1.xx&oh=26eff9a65270f2bd929df2c281c4abbb&oe=6189D205"
-        ))
         line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
