@@ -232,6 +232,21 @@ def handle_message(event):
             preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244013932_1523737471314202_952905935827290928_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=CXop1z8zMckAX_Mpg7h&_nc_ht=scontent-tpe1-1.xx&oh=1b5e87586d661d3b0f5e82d343a31313&oe=618714F6"
         ))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="時空彈跳系統修復碼9384235":
+        message=[]
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244520711_1523742171313732_7087740408732141861_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=7Y02XM3BxQUAX9dbh4y&_nc_ht=scontent-tpe1-1.xx&oh=487b7c29a42ba37cbd1e7caf7bf5c722&oe=6186742C",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244520711_1523742171313732_7087740408732141861_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=7Y02XM3BxQUAX9dbh4y&_nc_ht=scontent-tpe1-1.xx&oh=487b7c29a42ba37cbd1e7caf7bf5c722&oe=6186742C"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244345826_1523742634647019_7509040325766939356_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=rTCJIEIJMi8AX_V90OR&_nc_ht=scontent-tpe1-1.xx&oh=ad8ae6556f5f6363502ed63a5dde2b2a&oe=61868E3C",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244345826_1523742634647019_7509040325766939356_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=rTCJIEIJMi8AX_V90OR&_nc_ht=scontent-tpe1-1.xx&oh=ad8ae6556f5f6363502ed63a5dde2b2a&oe=61868E3C"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244469852_1523742721313677_93520568350537129_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0t6_a2jbNhoAX-E0Vs4&_nc_ht=scontent-tpe1-1.xx&oh=52f17c98b4d70fea518a88c1a0cf8877&oe=6187FB1B",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244469852_1523742721313677_93520568350537129_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0t6_a2jbNhoAX-E0Vs4&_nc_ht=scontent-tpe1-1.xx&oh=52f17c98b4d70fea518a88c1a0cf8877&oe=6187FB1B"
+        ))
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
         message=[]
