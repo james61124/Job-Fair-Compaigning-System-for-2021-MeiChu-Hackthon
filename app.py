@@ -221,6 +221,17 @@ def handle_message(event):
         message.append(TextSendMessage(text="恭喜!記得截圖至抽獎台抽獎喔"))
         message.append(TextSendMessage(text="若想繼續下一階的遊戲，請打\"開始第二階遊戲\""))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="開始第二階遊戲":
+        message=[]
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244143118_1523737334647549_5404780947260375426_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=EdTo9UY_Gh8AX941TIw&_nc_ht=scontent-tpe1-1.xx&oh=219dd009f59980f640cd848bb1838763&oe=61896FF0",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244143118_1523737334647549_5404780947260375426_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=EdTo9UY_Gh8AX941TIw&_nc_ht=scontent-tpe1-1.xx&oh=219dd009f59980f640cd848bb1838763&oe=61896FF0"
+        ))
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244013932_1523737471314202_952905935827290928_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=CXop1z8zMckAX_Mpg7h&_nc_ht=scontent-tpe1-1.xx&oh=1b5e87586d661d3b0f5e82d343a31313&oe=618714F6",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244013932_1523737471314202_952905935827290928_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=CXop1z8zMckAX_Mpg7h&_nc_ht=scontent-tpe1-1.xx&oh=1b5e87586d661d3b0f5e82d343a31313&oe=618714F6"
+        ))
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
         message=[]
