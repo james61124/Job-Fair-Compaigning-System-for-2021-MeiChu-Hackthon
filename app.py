@@ -188,12 +188,12 @@ def handle_message(event):
     elif event.message.text=="梅竹黑客松":
         message = []
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-O-ZyXcPHLaY/YU3UF-z8wwI/AAAAAAAAK7c/MaDKYnFcHo4TL_kOSsz-FtUzDvA6Y_HJQCLcBGAsYHQ/s320/9%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-O-ZyXcPHLaY/YU3UF-z8wwI/AAAAAAAAK7c/MaDKYnFcHo4TL_kOSsz-FtUzDvA6Y_HJQCLcBGAsYHQ/s320/9%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244470340_1523735634647719_5174180938226191416_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=advF76HgIDoAX8fOwe2&_nc_ht=scontent-tpe1-1.xx&oh=bccd59be5f4fa9b1c685698d1caceb95&oe=618934F8",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244470340_1523735634647719_5174180938226191416_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=advF76HgIDoAX8fOwe2&_nc_ht=scontent-tpe1-1.xx&oh=bccd59be5f4fa9b1c685698d1caceb95&oe=618934F8"
         ))
         message.append(ImageSendMessage(
-            original_content_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg",
-            preview_image_url="https://1.bp.blogspot.com/-7trIijD2VMU/YU3UNkw2EPI/AAAAAAAAK7k/Gr77rUsobqYbkfnRgGqy1iNDqjGmEL5xwCLcBGAsYHQ/s320/10%2B%25281%2529.jpg"
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244468949_1523735737981042_2427317202944832377_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=tEyvvIpHrSkAX9KNGFm&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=537fb7c22a4cea34c34625d663c53efb&oe=6189A5D0",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244468949_1523735737981042_2427317202944832377_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=tEyvvIpHrSkAX9KNGFm&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=537fb7c22a4cea34c34625d663c53efb&oe=6189A5D0"
         ))
         message.append(TextSendMessage(text="您已完成第一階段，請輸入\"我的名字:_____\"並截圖最後通關的對話紀錄，便能擁有抽獎機會"))
         line_bot_api.reply_message(event.reply_token, message)
