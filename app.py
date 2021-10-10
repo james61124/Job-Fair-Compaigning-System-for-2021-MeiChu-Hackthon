@@ -221,6 +221,13 @@ def handle_message(event):
         message.append(TextSendMessage(text="恭喜!記得截圖至抽獎台抽獎喔"))
         message.append(TextSendMessage(text="若想繼續下一階的遊戲，請打\"開始第二階遊戲\""))
         line_bot_api.reply_message(event.reply_token, message)
+    elif "測試" in event.message.text:
+        message = []
+        message.append(ImageSendMessage(
+            original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244712650_1523725214648761_6274161387782555243_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=lKdbuwTldzoAX-vCPt7&_nc_ht=scontent-tpe1-1.xx&oh=26eff9a65270f2bd929df2c281c4abbb&oe=6189D205",
+            preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244712650_1523725214648761_6274161387782555243_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=lKdbuwTldzoAX-vCPt7&_nc_ht=scontent-tpe1-1.xx&oh=26eff9a65270f2bd929df2c281c4abbb&oe=6189D205"
+        ))
+        line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
         message=[]
