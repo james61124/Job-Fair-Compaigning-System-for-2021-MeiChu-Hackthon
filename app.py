@@ -213,11 +213,11 @@ def handle_message(event):
     #收關
     elif "我的名字:" in event.message.text:
         message=[]
-        message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
+        message.append(TextSendMessage(text="恭喜!記得截圖至抽獎台抽獎喔"))
         line_bot_api.reply_message(event.reply_token, message)
     elif "我的名字：" in event.message.text:
         message=[]
-        message.append(TextSendMessage(text="恭喜!記得截圖兌換獎品喔"))
+        message.append(TextSendMessage(text="恭喜!記得截圖至抽獎台抽獎喔"))
         line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
