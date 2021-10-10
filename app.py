@@ -246,6 +246,27 @@ def handle_message(event):
             original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244469852_1523742721313677_93520568350537129_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0t6_a2jbNhoAX-E0Vs4&_nc_ht=scontent-tpe1-1.xx&oh=52f17c98b4d70fea518a88c1a0cf8877&oe=6187FB1B",
             preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244469852_1523742721313677_93520568350537129_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0t6_a2jbNhoAX-E0Vs4&_nc_ht=scontent-tpe1-1.xx&oh=52f17c98b4d70fea518a88c1a0cf8877&oe=6187FB1B"
         ))
+        message.append(TextSendMessage(text="您已完成第二階段，請輸入\"我的gather town名字:_____\"並截圖最後通關的對話紀錄，便能再次擁有抽獎機會"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的gather town名字:" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="感謝您完成RPG遊戲，黑客松祝您比賽順利"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的gather town名字：" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="感謝您完成RPG遊戲，黑客松祝您比賽順利"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的gather town 名字:" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="感謝您完成RPG遊戲，黑客松祝您比賽順利"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的 gather town 名字:" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="感謝您完成RPG遊戲，黑客松祝您比賽順利"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif "我的 gather town名字:" in event.message.text:
+        message=[]
+        message.append(TextSendMessage(text="感謝您完成RPG遊戲，黑客松祝您比賽順利"))
         line_bot_api.reply_message(event.reply_token, message)
     else:
         msg="再想想!!"
