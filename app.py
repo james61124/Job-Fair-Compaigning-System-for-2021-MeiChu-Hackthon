@@ -131,7 +131,7 @@ def handle_message(event):
     #實驗室(美光)
     elif event.message.text=="忘記美光原始碼":
         message=[]
-        message.append(TextSendMessage(text="請輸入美光在甚麼領域有領先地位"))
+        message.append(TextSendMessage(text="請輸入美光在甚麼領域有領先地位(四個英文字)"))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="DRAM":
         message=[]
@@ -143,18 +143,10 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="忘記NXP原始碼":
         message=[]
-        message.append(TextSendMessage(text="請輸入NXP主要的四大市場"))
+        message.append(TextSendMessage(text="請輸入NXP主要生產何種產品"))
         line_bot_api.reply_message(event.reply_token, message)
     #實驗室(NXP)
-    elif ("automotive" in event.message.text) & ("communication infrastructure" in event.message.text) & ("industrial" in event.message.text) & ("mobile" in event.message.text) :
-        message=[]
-        message.append(TextSendMessage(text="NXP原始碼88332"))
-        line_bot_api.reply_message(event.reply_token, message)
-    elif ("Automotive" in event.message.text) & ("Communication Infrastructure" in event.message.text) & ("Industrial" in event.message.text) & ("Mobile" in event.message.text) :
-        message=[]
-        message.append(TextSendMessage(text="NXP原始碼88332"))
-        line_bot_api.reply_message(event.reply_token, message)
-    elif ("AUTOMOTIVE" in event.message.text) & ("COMMUNICATION INFRASTRUCTURE" in event.message.text) & ("INDUSTRIAL" in event.message.text) & ("MOBILE" in event.message.text) :
+    elif event.message.text=="半導體":
         message=[]
         message.append(TextSendMessage(text="NXP原始碼88332"))
         line_bot_api.reply_message(event.reply_token, message)
