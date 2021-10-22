@@ -104,6 +104,10 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="請輸入原相致力於生產的高科技晶片英文名稱"))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="忘記原相原始碼":
+        message=[]
+        message.append(TextSendMessage(text="請輸入原相致力於生產的高科技晶片英文名稱"))
+        line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="CMOS Sensor":
         message=[]
         message.append(TextSendMessage(text="原相原始碼04126"))
