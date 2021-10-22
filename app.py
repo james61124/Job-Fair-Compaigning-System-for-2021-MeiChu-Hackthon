@@ -112,6 +112,14 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="請輸入原相致力於生產的高科技晶片英文名稱"))
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="CMOS":
+        message=[]
+        message.append(TextSendMessage(text="原相原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text=="cmos":
+        message=[]
+        message.append(TextSendMessage(text="原相原始碼04126"))
+        line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text=="CMOS Sensor":
         message=[]
         message.append(TextSendMessage(text="原相原始碼04126"))
@@ -141,11 +149,11 @@ def handle_message(event):
         message=[]
         message.append(TextSendMessage(text="美光原始碼53234"))
         line_bot_api.reply_message(event.reply_token, message)
+    #實驗室(NXP)
     elif event.message.text=="忘記NXP原始碼":
         message=[]
         message.append(TextSendMessage(text="請輸入NXP主要生產何種產品"))
         line_bot_api.reply_message(event.reply_token, message)
-    #實驗室(NXP)
     elif event.message.text=="半導體":
         message=[]
         message.append(TextSendMessage(text="NXP原始碼88332"))
@@ -178,7 +186,7 @@ def handle_message(event):
             original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244465604_1523734361314513_2597882015681817780_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=_TYsOaJHm6EAX-4Uh1M&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=a38bbb7522915f72245f4e339059fcdc&oe=6189B57C",
             preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/244465604_1523734361314513_2597882015681817780_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=_TYsOaJHm6EAX-4Uh1M&tn=iTBmPKelHvVMj8qw&_nc_ht=scontent-tpe1-1.xx&oh=a38bbb7522915f72245f4e339059fcdc&oe=6189B57C"
         ))
-        message.append(TextSendMessage(text="進行最後身分驗證，請輸入五位驗證碼"))
+        message.append(TextSendMessage(text="進行最後身分驗證，請輸入五位驗證碼(中文)"))
         message.append(ImageSendMessage(
             original_content_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=9nEdOGrzYVgAX8U9Yt0&_nc_ht=scontent-tpe1-1.xx&oh=3f53c375abd413801f83e26c209c25a3&oe=61878AC1",
             preview_image_url="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/241397758_4693290240682338_4295708469528341812_n.png?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=9nEdOGrzYVgAX8U9Yt0&_nc_ht=scontent-tpe1-1.xx&oh=3f53c375abd413801f83e26c209c25a3&oe=61878AC1"
